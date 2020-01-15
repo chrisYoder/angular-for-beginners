@@ -1,10 +1,26 @@
 <div>
-  <h1>Welcome {{ data.name }}</h1>
+  <!--<h1>Welcome {{ data.name }}</h1>
   <h3>You are taking the {{ data.course }} course</h3>
 
   <p>You started this course on {{ data.started }}</p>
   <ul>
     <li>item 1</li>
     <li>item 2</li>
-  </ul>
+  </ul> 
+  <div>
+    <img 
+      width="300" 
+      alt='angular logo' 
+      (click)='onLogoClicked()'
+      src="https://www.zazzle.com/rlv/angularjs_shield_logo_ceramic_tile-r0188a63b5bcb4014b7fb3974f5cf3a77_agtk1_8byvr_324.jpg">
+  </div>
+
+  <input 
+    class='demo' 
+    (keyup)='onKeyUp(titleInput.value)'     
+    [value]='data.course' 
+    #titleInput>
+      <!-- titleInput.value is going to grab the current value of the input  --
+
+  -->
 </div>

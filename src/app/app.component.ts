@@ -12,4 +12,12 @@ export class AppComponent  {
     started: '01.14.2020', 
     course: 'Angular Core Deep Dive'
   }
+
+  onLogoClicked() {
+    alert('Hello World');
+  }
+
+  onKeyUp(newTitle: string){
+    this.data.course = newTitle;
+  }
 }
