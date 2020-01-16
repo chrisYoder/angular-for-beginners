@@ -1,1 +1,12 @@
 /* Add application styles & imports to this file! */
+:root {
+  --ravenclaw-blue: #222f5b;
+  --ravenclaw-bronze: #946b2d;
+  --ravenclaw-silver: #5d5d5d;
+}
+
+body, html, * {
+  font-family: 'Philosopher', sans-serif;
+  margin: 0;
+  padding: 0;
+}

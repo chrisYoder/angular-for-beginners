@@ -1,0 +1,14 @@
+div {
+  background-color: var(--ravenclaw-blue);
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  display: grid;
+  align-items: center;
+}
+
+h3 {
+  color: var(--ravenclaw-bronze);
+  display: grid;
+  align-items: center;
+}
