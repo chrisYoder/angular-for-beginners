@@ -24,5 +24,10 @@
 
   -->
     <nav-bar></nav-bar>
-    <course-card></course-card>
+    <h1> {{ coreCourse.description }} </h1>
+    <div class='courses'>
+      <course-card [title]='coreCourse.description'></course-card>
+      <course-card></course-card>
+      <course-card></course-card>
+    </div>
 </div>

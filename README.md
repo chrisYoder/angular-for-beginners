@@ -13,7 +13,8 @@
     - allows us to reference the values of elements easily
 
 ## Section 2: Angular Components
-  - 
+  - Input Decorators
+    -
 
 
 
