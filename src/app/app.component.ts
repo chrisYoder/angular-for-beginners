@@ -14,9 +14,7 @@ export class AppComponent  {
   //   course: 'Angular Core Deep Dive'
   // }
 
-  coreCourse = COURSES[0];
-  rxjsCourse = COURSES[1];
-  ngrxCourse = COURSES[2];
+  
 
   // onLogoClicked() {
   //   alert('Hello World');
@@ -25,4 +23,12 @@ export class AppComponent  {
   // onKeyUp(newTitle: string){
   //   this.data.course = newTitle;
   // }
+
+  coreCourse = COURSES[0];
+  rxjsCourse = COURSES[1];
+  ngrxCourse = COURSES[2];
+
+  onCardClicked() {
+    console.log('App component- click event bubbled.');
+  }
 }

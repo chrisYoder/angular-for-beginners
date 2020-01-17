@@ -14,7 +14,11 @@
 
 ## Section 2: Angular Components
   - Input Decorators
-    -
+    - marks a class field as an input property and supplies configuration metadata. The input property is bound to a DOM property in the template. During change detection, Angular automatically updates the data property with the DOM property's value.
+    - Syntax: @Input() bindingPropertyName: string;
+  - Output Decorators
+    - emit change or any custom event names from a custom component in Angular.
+    - Syntax: @output() 
 
 
 

@@ -12,7 +12,8 @@
   grid-template-areas: 
     '. title .'
     '. image .'
-    '. desc .';
+    '. desc .'
+    '. button .';
 }
 
 .course-title {
@@ -33,4 +34,14 @@
   color: var(--ravenclaw-blue);
   font-size: 1em;
   text-align: center;
+}
+
+.button { 
+  grid-area: button;
+  padding: 10px;
+  background-color: var(--ravenclaw-blue);
+  color: var(--ravenclaw-bronze);
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 10px;
 }

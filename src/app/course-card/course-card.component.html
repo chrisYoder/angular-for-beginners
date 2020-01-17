@@ -1,18 +1,25 @@
 
   <div class='course-card'>
     <div class='course-title'>
-      {{ title }}
+      {{ course.description }}
     </div>
 
     <div class='course-img'>
       <img 
         width='300'
         alt='Angular Logo'
-        src="https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small-v2.png"
+        [src]='course.iconUrl'
       >
     </div>
 
     <div class='course-description'>
-      A detailed walk-through of the most important parts of Angular - the Core and Common Modules
+      {{ course.longDescription }}
     </div>
+
+    <button 
+      class='button'
+      (click)="onCourseViewed()"
+    >
+        View Course
+    </button>
   </div>
