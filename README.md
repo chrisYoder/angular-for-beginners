@@ -18,7 +18,13 @@
     - Syntax: @Input() bindingPropertyName: string;
   - Output Decorators
     - emit change or any custom event names from a custom component in Angular.
-    - Syntax: @output() 
+    - Syntax: @output() eventName = new EventEmitter
+  - ngFor
+    - Loops through an array of data and displays the data
+    - Auxilliary features
+      - Index
+        - Numbers each created item. 
+      - First does something to the first element.
 
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { COURSES } from '../../db-data';
 import { Course } from '../model/course';
 @Component({
@@ -8,13 +8,19 @@ import { Course } from '../model/course';
 })
 export class CourseCardComponent implements OnInit {
   @Input() course:Course;
-  constructor() { }
+  @Input() cardIndex:Number;
 
+  @Output('courseSelected') courseEmitter = new EventEmitter<Course>();
+    // if we want to reference a custom event from the component without keeping the same name then we put the name of the custom event as a string parameter for @Output
+  
   ngOnInit() {
   }
 
+  constructor() { }
+
   onCourseViewed() {
     console.log("card component - button clicked ...");
+    this.courseEmitter.emit(this.course);
   }
 
 }
