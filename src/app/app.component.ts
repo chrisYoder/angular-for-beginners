@@ -35,6 +35,10 @@ export class AppComponent  {
 
   courses = COURSES;
 
+  title = COURSES[0].description;
+  course = COURSES[0];
+  price = 9.99;
+  rate = 0.67;
   onCourseSelected(course:Course) {
     console.log('App component - click event bubbled...', course);
   }

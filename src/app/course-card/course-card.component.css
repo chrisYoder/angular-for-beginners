@@ -1,4 +1,9 @@
-
+.demo{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: heavy;
+  margin: 5px;
+}
 .course-card {
    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
   padding: 5px;
@@ -9,11 +14,17 @@
   display: grid;
   width: 400px;
   justify-items: center;
+  justify-self: center;
   grid-template-areas: 
     '. title .'
     '. image .'
     '. desc .'
+    '. cat . '
     '. button .';
+}
+
+.course-card.beginner {
+  background: lightsalmon;
 }
 
 .course-title {
@@ -34,6 +45,10 @@
   color: var(--ravenclaw-blue);
   font-size: 1em;
   text-align: center;
+}
+
+.course-category {
+  grid-area: cat;
 }
 
 .button { 

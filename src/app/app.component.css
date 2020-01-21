@@ -5,3 +5,12 @@ input.demo {
   font-size: 25px;
   padding: 5px;
 }
+
+.demo {
+  text-align: center;
+}
+
+.courses {
+  display: grid;
+  justify-items: center;
+}

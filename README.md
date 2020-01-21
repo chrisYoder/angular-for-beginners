@@ -25,6 +25,43 @@
       - Index
         - Numbers each created item. 
       - First does something to the first element.
+  - ngIf
+    - conditionally renders element 
+  - Optional Chaining
+    - Syntax: ?.propertyName 
+    -  provides a way to simplify accessing values through connected objects when it's possible that a reference or function may be undefined or null.
+  - Core Directives
+    - ngClass
+      - syntax: \[ngClass\]=""
+      - adds or removes CSS classes on an element.
+      - four ways to use
+        - String
+          - \[ngClass\]='beginner'
+        - Array
+          - \[ngClass\]=\['begginer'\]
+        - Object
+          -  \[ngClass\]={'beginner': true, 'courseCard': true}
+        - function 
+          - \[ngClass\]="someFunction()"
+          - must have a corresponding function in the .ts file
+    - ngStyle
+      - apply's style to a particular part of the Components
+      - Ways to use 
+        - \[style.propertyName\]="'value'"
+        - \[ngStyle\]="{'propertyName': 'value'}"
+        - \[ngStyle\]='someFunction()'
+          - corresponding function in TS file
+    - ngSwitch
+      - allows conditional rendering with more than two choices
+      - Syntax: 
+        - \[ngSwitch\]='test.condition' in parent component
+        - *ngSwitchCase='case' in child Components
+    - Built-In Pipes
+      - transforms data and displays it.
+  ## Section 3: Angular Service Layer
+    - 
+
+      
 
 
 
@@ -37,5 +74,3 @@
 
 
 
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-tqgseo)
